@@ -1,0 +1,99 @@
+* {
+  font-family: sans-serif;
+  color: white;
+  background-color: #e8e8e8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+}
+
+.card-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 100px;
+}
+
+.card {
+  -webkit-perspective: 750px;
+          perspective: 750px;
+  position: relative;
+  min-height: 200px;
+  width: 300px;
+}
+
+.front {
+  height: 100%;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  overflow: hidden;
+  -webkit-box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.back {
+  height: 100%;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  overflow: hidden;
+  -webkit-box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  background-color: red;
+}
+
+.front {
+  background-color: #c4b6b6;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.front-show {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+.back-hide {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+button {
+  border-radius: 5px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 25px;
+  color: blue;
+  margin-left: 2px;
+}
+/*# sourceMappingURL=main.css.map */
