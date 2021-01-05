@@ -11,20 +11,24 @@ h2 {
   color: black;
 }
 
+h3 {
+  color: black;
+}
+
 .card-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 50px;
-  padding: 100px;
+  padding: 80px;
 }
 
 .card {
   -webkit-perspective: 750px;
           perspective: 750px;
   position: relative;
-  min-height: 200px;
+  min-height: 300px;
   width: 300px;
 }
 
@@ -95,5 +99,37 @@ button {
   font-size: 25px;
   color: blue;
   margin-left: 2px;
+}
+
+time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+}
+
+time #timer {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .card-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 /*# sourceMappingURL=main.css.map */

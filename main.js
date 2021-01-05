@@ -1,10 +1,11 @@
 
 
-
 const cardContainer = document.querySelectorAll(".card")
-
+const front = document.querySelectorAll("front")
 let firstCard,  secondCard;
-let clickedCards = [];
+
+const display = document.getElementById('timer');
+const alertText = document.getElementById("alert-text");
 
 
 cardContainer.forEach(container => container.addEventListener("click", (event) => { 
@@ -15,6 +16,7 @@ cardContainer.forEach(container => container.addEventListener("click", (event) =
 
     console.log(event);
     console.log(container.dataset);
+    
     
     
 
@@ -28,12 +30,27 @@ cardContainer.forEach(container => container.addEventListener("click", (event) =
     }
 
     if (firstCard === secondCard ) {
-        alert("Well done you found a match")    
-    }else{
+        alertText.innerHTML = "<p>You found a match!</p>";
+        
+    }else{        
+        alertText.innerHTML = "<P> Keep Trying </P>";
+
             setTimeout(() => {
-    back.classList.toggle("back-hide")
-                }, 500);
+             
+                },2000);
         }
     }));
-
     
+    
+        
+
+
+(function shuffle() {
+        cardContainer.forEach(container => {
+            let ramdomPos = Math.floor(Math.random() * 12);
+            container.style.order = ramdomPos;
+        });
+        })(); 
+
+
+        

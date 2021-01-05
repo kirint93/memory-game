@@ -9,17 +9,23 @@
 h2{
   color: black;
 }
+
+h3{
+  color: black;
+}
 .card-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr  ;
+  
   gap: 50px;
-  padding: 100px;
+  padding: 80px;
+  
 }
 
 .card {
   perspective: 750px;
   position: relative;
-  min-height: 200px;
+  min-height: 300px;
   width: 300px;
 }
 
@@ -59,6 +65,7 @@ height: 100%;
   display:flex;
   justify-content:center;
   align-items:center;
+  ;
 }
 
 .front-show {
@@ -77,4 +84,28 @@ button {
     font-size: 25px;
     color:blue;
 margin-left: 2px ;
+}
+
+
+time {
+  display:flex;
+  justify-content: center;
+  font-size:30px;
+  #timer {
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
