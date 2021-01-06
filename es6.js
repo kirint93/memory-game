@@ -48,8 +48,8 @@ cardContainer.forEach(container => container.addEventListener("click", (event) =
     
     
     var second = 0, minute = 0;
-    var timer = document.querySelector(".timer");
-    var interval;
+    const timer = document.querySelector(".timer");
+    let interval;
     function startTimer(){
         interval = setInterval(function(){
             timer.innerHTML = minute+"mins "+second+"secs";

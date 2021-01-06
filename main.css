@@ -1,6 +1,6 @@
 * {
   font-family: sans-serif;
-  color: white;
+  color: black;
   background-color: #e8e8e8;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -13,6 +13,11 @@ h2 {
 
 h3 {
   color: black;
+}
+
+.timer {
+  display: inline-block;
+  margin: 0 1rem;
 }
 
 .card-container {
