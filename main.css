@@ -121,7 +121,7 @@ time #timer {
   color: white;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 860px) {
   .card-container {
     display: -ms-grid;
     display: grid;
@@ -130,7 +130,7 @@ time #timer {
   }
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (min-width: 700px) {
   .card-container {
     display: -ms-grid;
     display: grid;

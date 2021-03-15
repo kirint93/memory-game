@@ -30,35 +30,35 @@ cardContainer.forEach((container) =>
   })
 );
 
-const second = 0,
-  minute = 0;
-const timer = document.querySelector(".timer");
-var interval ;
-const startTimer = () => {
-  interval = (setInterval= () => {
-    timer.innerHTML = minute + "mins " + second + "secs";
-    second++;
-    if (second == 60) {
-      minute++;
-      second = 0;
-    }
-    if (minute == 60) {
-      hour++;
-      minute = 0;
-    }
-  }, 1000);
-}
-const moveCounter = () => {
-  moves++;
-  counter.innerHTML = moves;
-  //start timer on first move
-  if (moves == 1) {
-    second = 0;
-    minute = 0;
-    hour = 0;
-    startTimer();
-  }
-}
+//  second = 0,
+//  minute = 0;
+// const timer = document.querySelector(".timer");
+// var interval ;
+// const startTimer = () => {
+//   interval = (setInterval= () => {
+//     timer.innerHTML = minute + "mins " + second + "secs";
+//     second++;
+//     if (second == 60) {
+//       minute++;
+//       second = 0;
+//     }
+//     if (minute == 60) {
+//       hour++;
+//       minute = 0;
+//     }
+//   }, 1000);
+// }
+// const moveCounter = () => {
+//   moves++;
+//   counter.innerHTML = moves;
+//   //start timer on first move
+//   if (moves == 1) {
+//     second = 0;
+//     minute = 0;
+//     hour = 0;
+//     startTimer();
+//   }
+// }
 const  shuffle = (() => {
   cardContainer.forEach((card) => {
     let ramdomPos = Math.floor(Math.random() * 12);
