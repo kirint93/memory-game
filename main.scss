@@ -20,18 +20,19 @@ h3{
 }
 .card-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr  ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+   margin-right: 0;
+  gap: 10px ;
   
-  gap: 50px;
-  padding: 80px;
+  padding: 40px;
   
 }
 
 .card {
   perspective: 750px;
   position: relative;
-  min-height: 300px;
-  width: 300px;
+  min-height: 250px;
+  width: 230px;
 }
 
 .front {

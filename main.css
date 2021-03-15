@@ -25,16 +25,17 @@ h3 {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 50px;
-  padding: 80px;
+  margin-right: 0;
+  gap: 10px;
+  padding: 40px;
 }
 
 .card {
   -webkit-perspective: 750px;
           perspective: 750px;
   position: relative;
-  min-height: 300px;
-  width: 300px;
+  min-height: 250px;
+  width: 230px;
 }
 
 .front {
