@@ -1,3 +1,4 @@
+  
 * {
   font-family: sans-serif;
   color: black;
@@ -20,11 +21,12 @@ h3{
 }
 .card-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-   margin-right: 0;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr  ;
+   width: 40%;
+  margin-right: 800px;
   gap: 10px ;
   
-  padding: 40px;
+  padding: 20px;
   
 }
 
@@ -33,6 +35,10 @@ h3{
   position: relative;
   min-height: 250px;
   width: 230px;
+  
+
+  
+  
 }
 
 .front {
@@ -45,7 +51,7 @@ h3{
   border-radius: 10px;
   backface-visibility: hidden;
   overflow: hidden;
-  box-shadow: 0 15px 40px rgba(0,0,0, .15);
+  box-shadow: 0 15px 20px rgba(0,0,0, .15);
 
 
 }
@@ -59,7 +65,7 @@ height: 100%;
   border-radius: 10px;
   backface-visibility: hidden;
   overflow: hidden;
-  box-shadow: 0 15px 40px rgba(0,0,0, .15);
+  box-shadow: 0 15px 20px rgba(0,0,0, .15);
   background-color: red;
 }
 
@@ -109,9 +115,9 @@ time {
    
 }
 }
-@media only screen and (min-width : 700px) {
+@media only screen and (min-width : 1550px) {
   .card-container{
     display: grid;
-    grid-template-columns: 1fr 1fr  ;
+    grid-template-columns: 1fr 1fr 1fr 1fr
   }
 }
